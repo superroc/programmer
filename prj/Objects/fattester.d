@@ -1,0 +1,17 @@
+.\objects\fattester.o: ..\source\fatfs\fattester.c
+.\objects\fattester.o: ..\source\fatfs\fattester.h
+.\objects\fattester.o: ..\source\include\stm32f10x_map.h
+.\objects\fattester.o: ..\source\include\stm32f10x_conf.h
+.\objects\fattester.o: ..\source\include\stm32f10x_type.h
+.\objects\fattester.o: ..\source\include\cortexm3_macro.h
+.\objects\fattester.o: ..\source\fatfs\ff.h
+.\objects\fattester.o: ..\source\fatfs\integer.h
+.\objects\fattester.o: ..\source\fatfs\ffconf.h
+.\objects\fattester.o: ..\source\driver\mmc_sd.h
+.\objects\fattester.o: ..\source\system\sys.h
+.\objects\fattester.o: ..\source\include\stm32f10x_nvic.h
+.\objects\fattester.o: ..\source\system\usart.h
+.\objects\fattester.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\fattester.o: ..\source\fatfs\exfuns.h
+.\objects\fattester.o: ..\source\malloc\malloc.h
+.\objects\fattester.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

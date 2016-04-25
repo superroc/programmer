@@ -1,0 +1,15 @@
+.\objects\exfuns.o: ..\source\fatfs\exfuns.c
+.\objects\exfuns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\exfuns.o: ..\source\fatfs\exfuns.h
+.\objects\exfuns.o: ..\source\include\stm32f10x_map.h
+.\objects\exfuns.o: ..\source\include\stm32f10x_conf.h
+.\objects\exfuns.o: ..\source\include\stm32f10x_type.h
+.\objects\exfuns.o: ..\source\include\cortexm3_macro.h
+.\objects\exfuns.o: ..\source\fatfs\ff.h
+.\objects\exfuns.o: ..\source\fatfs\integer.h
+.\objects\exfuns.o: ..\source\fatfs\ffconf.h
+.\objects\exfuns.o: ..\source\fatfs\fattester.h
+.\objects\exfuns.o: ..\source\malloc\malloc.h
+.\objects\exfuns.o: ..\source\system\usart.h
+.\objects\exfuns.o: ..\source\include\stm32f10x_nvic.h
+.\objects\exfuns.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

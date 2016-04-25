@@ -1,0 +1,13 @@
+.\objects\fontupd.o: ..\source\text\fontupd.c
+.\objects\fontupd.o: ..\source\text\fontupd.h
+.\objects\fontupd.o: ..\source\include\stm32f10x_map.h
+.\objects\fontupd.o: ..\source\include\stm32f10x_conf.h
+.\objects\fontupd.o: ..\source\include\stm32f10x_type.h
+.\objects\fontupd.o: ..\source\include\cortexm3_macro.h
+.\objects\fontupd.o: ..\source\fatfs\ff.h
+.\objects\fontupd.o: ..\source\fatfs\integer.h
+.\objects\fontupd.o: ..\source\fatfs\ffconf.h
+.\objects\fontupd.o: ..\source\driver\flash.h
+.\objects\fontupd.o: ..\source\system\sys.h
+.\objects\fontupd.o: ..\source\include\stm32f10x_nvic.h
+.\objects\fontupd.o: ..\source\malloc\malloc.h

@@ -1,0 +1,12 @@
+.\objects\flash.o: ..\source\driver\flash.c
+.\objects\flash.o: ..\source\driver\flash.h
+.\objects\flash.o: ..\source\system\sys.h
+.\objects\flash.o: ..\source\include\stm32f10x_map.h
+.\objects\flash.o: ..\source\include\stm32f10x_conf.h
+.\objects\flash.o: ..\source\include\stm32f10x_type.h
+.\objects\flash.o: ..\source\include\cortexm3_macro.h
+.\objects\flash.o: ..\source\include\stm32f10x_nvic.h
+.\objects\flash.o: ..\source\driver\spi.h
+.\objects\flash.o: ..\source\system\delay.h
+.\objects\flash.o: ..\source\system\usart.h
+.\objects\flash.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

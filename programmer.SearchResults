@@ -1,0 +1,27 @@
+---- current_received_count Matches (26 in 1 files) ----
+Lower.c (source\app):u8 current_received_count = 0;
+Lower.c (source\app):    boot_req_receive_buffer[current_received_count++] = data;
+Lower.c (source\app):    if(current_received_count == sizeof(boot_conn_req)) {
+Lower.c (source\app):            current_received_count = 0;
+Lower.c (source\app):            current_received_count--;
+Lower.c (source\app):    if(data == boot_conn_req[current_received_count]) {
+Lower.c (source\app):        current_received_count++;
+Lower.c (source\app):        if((current_received_count == sizeof(boot_conn_req))
+Lower.c (source\app):            current_received_count = 0;
+Lower.c (source\app):        current_received_count = 0;
+Lower.c (source\app):    if(data == boot_conn_success[current_received_count]) {
+Lower.c (source\app):        current_received_count++;
+Lower.c (source\app):        if(current_received_count == sizeof(boot_conn_success)) {
+Lower.c (source\app):            current_received_count = 0;
+Lower.c (source\app):        current_received_count = 0;
+Lower.c (source\app):    if(current_received_count < sizeof(struct boot_pkt_t)) {
+Lower.c (source\app):        *((u8 *)(&header)+current_received_count) = data;
+Lower.c (source\app):        current_received_count++;
+Lower.c (source\app):    if(current_received_count == sizeof(struct boot_pkt_t)) {
+Lower.c (source\app):            current_received_count = 0;
+Lower.c (source\app):        lower_rx_buffer[current_received_count] = data;
+Lower.c (source\app):    current_received_count++;
+Lower.c (source\app):    if(current_received_count == read_count) {
+Lower.c (source\app):    current_received_count = 0;
+Lower.c (source\app):    current_received_count = 0;
+Lower.c (source\app):    current_received_count = 0;

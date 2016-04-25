@@ -1,0 +1,12 @@
+.\objects\diskio.o: ..\source\fatfs\diskio.c
+.\objects\diskio.o: ..\source\driver\mmc_sd.h
+.\objects\diskio.o: ..\source\system\sys.h
+.\objects\diskio.o: ..\source\include\stm32f10x_map.h
+.\objects\diskio.o: ..\source\include\stm32f10x_conf.h
+.\objects\diskio.o: ..\source\include\stm32f10x_type.h
+.\objects\diskio.o: ..\source\include\cortexm3_macro.h
+.\objects\diskio.o: ..\source\include\stm32f10x_nvic.h
+.\objects\diskio.o: ..\source\fatfs\diskio.h
+.\objects\diskio.o: ..\source\fatfs\integer.h
+.\objects\diskio.o: ..\source\driver\flash.h
+.\objects\diskio.o: ..\source\malloc\malloc.h

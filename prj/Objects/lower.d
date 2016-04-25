@@ -1,0 +1,16 @@
+.\objects\lower.o: ..\source\app\lower.c
+.\objects\lower.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lower.o: ..\source\system\usart.h
+.\objects\lower.o: ..\source\include\stm32f10x_map.h
+.\objects\lower.o: ..\source\include\stm32f10x_conf.h
+.\objects\lower.o: ..\source\include\stm32f10x_type.h
+.\objects\lower.o: ..\source\include\cortexm3_macro.h
+.\objects\lower.o: ..\source\include\stm32f10x_nvic.h
+.\objects\lower.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\lower.o: ..\source\fatfs\ff.h
+.\objects\lower.o: ..\source\fatfs\integer.h
+.\objects\lower.o: ..\source\fatfs\ffconf.h
+.\objects\lower.o: ..\source\malloc\malloc.h
+.\objects\lower.o: ..\source\driver\led.h
+.\objects\lower.o: ..\source\system\sys.h
+.\objects\lower.o: ..\source\app\lower.h

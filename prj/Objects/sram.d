@@ -1,0 +1,9 @@
+.\objects\sram.o: ..\source\driver\sram.c
+.\objects\sram.o: ..\source\driver\sram.h
+.\objects\sram.o: ..\source\include\stm32f10x_map.h
+.\objects\sram.o: ..\source\include\stm32f10x_conf.h
+.\objects\sram.o: ..\source\include\stm32f10x_type.h
+.\objects\sram.o: ..\source\include\cortexm3_macro.h
+.\objects\sram.o: ..\source\system\usart.h
+.\objects\sram.o: ..\source\include\stm32f10x_nvic.h
+.\objects\sram.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

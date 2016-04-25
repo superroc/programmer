@@ -1,0 +1,9 @@
+.\objects\text.o: ..\source\text\text.c
+.\objects\text.o: ..\source\system\sys.h
+.\objects\text.o: ..\source\include\stm32f10x_map.h
+.\objects\text.o: ..\source\include\stm32f10x_conf.h
+.\objects\text.o: ..\source\include\stm32f10x_type.h
+.\objects\text.o: ..\source\include\cortexm3_macro.h
+.\objects\text.o: ..\source\include\stm32f10x_nvic.h
+.\objects\text.o: ..\source\text\fontupd.h
+.\objects\text.o: ..\source\driver\flash.h

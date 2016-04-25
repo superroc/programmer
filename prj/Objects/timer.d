@@ -1,0 +1,11 @@
+.\objects\timer.o: ..\source\driver\timer.c
+.\objects\timer.o: ..\source\driver\timer.h
+.\objects\timer.o: ..\source\system\sys.h
+.\objects\timer.o: ..\source\include\stm32f10x_map.h
+.\objects\timer.o: ..\source\include\stm32f10x_conf.h
+.\objects\timer.o: ..\source\include\stm32f10x_type.h
+.\objects\timer.o: ..\source\include\cortexm3_macro.h
+.\objects\timer.o: ..\source\include\stm32f10x_nvic.h
+.\objects\timer.o: ..\source\driver\led.h
+.\objects\timer.o: ..\source\system\usart.h
+.\objects\timer.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

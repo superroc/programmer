@@ -1,0 +1,425 @@
+Dependencies for Project 'programmer', Target 'Target 1': (DO NOT MODIFY !)
+F (..\source\entry\startup_stm32f10x_hd.s)(0x505564D1)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x--pd "__UVISION_VERSION SETA 517"--list .\listings\startup_stm32f10x_hd.lst --xref -o .\objects\startup_stm32f10x_hd.o --depend .\objects\startup_stm32f10x_hd.d)
+F (..\source\driver\flash.c)(0x504C3BBB)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\flash.o --omf_browse .\objects\flash.crf --depend .\objects\flash.d)
+I (..\source\driver\flash.h)(0x504C212D)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\driver\spi.h)(0x504C272B)
+I (..\source\system\delay.h)(0x50436849)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\driver\spi.c)(0x50611AE1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
+I (..\source\driver\spi.h)(0x504C272B)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\driver\sram.c)(0x5055B4BE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\sram.o --omf_browse .\objects\sram.crf --depend .\objects\sram.d)
+I (..\source\driver\sram.h)(0x5055B4BE)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\driver\timer.c)(0x56EF54B7)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\timer.o --omf_browse .\objects\timer.crf --depend .\objects\timer.d)
+I (..\source\driver\timer.h)(0x505310A8)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\driver\led.h)(0x56FA31C9)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\driver\led.c)(0x56FA3194)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\led.o --omf_browse .\objects\led.crf --depend .\objects\led.d)
+I (..\source\driver\led.h)(0x56FA31C9)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\driver\MMC_SD.C)(0x50573B5A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\mmc_sd.o --omf_browse .\objects\mmc_sd.crf --depend .\objects\mmc_sd.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\driver\mmc_sd.h)(0x50573D53)
+I (..\source\driver\spi.h)(0x504C272B)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\driver\exti.c)(0x57031016)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\exti.o --omf_browse .\objects\exti.crf --depend .\objects\exti.d)
+I (..\source\driver\exti.h)(0x57030CD3)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\system\delay.h)(0x50436849)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\driver\power_control.c)(0x56FA320C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\power_control.o --omf_browse .\objects\power_control.crf --depend .\objects\power_control.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\malloc\malloc.c)(0x5056D9F2)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\malloc.o --omf_browse .\objects\malloc.crf --depend .\objects\malloc.d)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+F (..\source\system\delay.c)(0x56EF5AB3)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\delay.o --omf_browse .\objects\delay.crf --depend .\objects\delay.d)
+I (..\source\system\delay.h)(0x50436849)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\system\sys.c)(0x56FB4528)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\sys.o --omf_browse .\objects\sys.crf --depend .\objects\sys.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\system\usart.c)(0x56FB4511)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\usb\config\hw_config.c)(0x56EF54B5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\hw_config.o --omf_browse .\objects\hw_config.crf --depend .\objects\hw_config.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\usb\config\platform_config.h)(0x4C21EBBA)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+I (..\source\usb\config\usb_desc.h)(0x5026666A)
+I (..\source\usb\config\usb_pwr.h)(0x4A0284C2)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\driver\led.h)(0x56FA31C9)
+F (..\source\usb\config\mass_mal.c)(0x4F5DC9DE)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\mass_mal.o --omf_browse .\objects\mass_mal.crf --depend .\objects\mass_mal.d)
+I (..\source\usb\config\platform_config.h)(0x4C21EBBA)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\driver\mmc_sd.h)(0x50573D53)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+I (..\source\driver\flash.h)(0x504C212D)
+F (..\source\usb\config\memory.c)(0x502525B4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\memory.o --omf_browse .\objects\memory.crf --depend .\objects\memory.d)
+I (..\source\usb\config\memory.h)(0x502525EA)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\config\usb_scsi.h)(0x4F6D32D6)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+F (..\source\usb\config\msd.c)(0x5061186B)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\msd.o --omf_browse .\objects\msd.crf --depend .\objects\msd.d)
+I (..\source\usb\config\msd.h)(0x4C22213A)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\driver\mmc_sd.h)(0x50573D53)
+I (..\source\driver\spi.h)(0x504C272B)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\usb\config\scsi_data.c)(0x5061518D)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\scsi_data.o --omf_browse .\objects\scsi_data.crf --depend .\objects\scsi_data.d)
+I (..\source\usb\config\usb_scsi.h)(0x4F6D32D6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\config\memory.h)(0x502525EA)
+F (..\source\usb\config\stm32f10x_it.c)(0x4F6B4AC4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\stm32f10x_it.o --omf_browse .\objects\stm32f10x_it.crf --depend .\objects\stm32f10x_it.d)
+I (..\source\usb\config\stm32f10x_it.h)(0x4F6D32D6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+I (..\source\usb\config\usb_istr.h)(0x4A0284C2)
+F (..\source\usb\config\usb_bot.c)(0x571B155E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_bot.o --omf_browse .\objects\usb_bot.crf --depend .\objects\usb_bot.d)
+I (..\source\usb\config\usb_scsi.h)(0x4F6D32D6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\usb\config\memory.h)(0x502525EA)
+F (..\source\usb\config\usb_desc.c)(0x50266A6C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_desc.o --omf_browse .\objects\usb_desc.crf --depend .\objects\usb_desc.d)
+I (..\source\usb\config\usb_desc.h)(0x5026666A)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+F (..\source\usb\config\usb_endp.c)(0x4C23029E)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_endp.o --omf_browse .\objects\usb_endp.crf --depend .\objects\usb_endp.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\usb\config\usb_istr.h)(0x4A0284C2)
+F (..\source\usb\config\usb_istr.c)(0x4C22FD20)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_istr.o --omf_browse .\objects\usb_istr.crf --depend .\objects\usb_istr.d)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\config\usb_pwr.h)(0x4A0284C2)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\config\usb_istr.h)(0x4A0284C2)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\config\usb_prop.c)(0x4F5DBEDA)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_prop.o --omf_browse .\objects\usb_prop.crf --depend .\objects\usb_prop.d)
+I (..\source\usb\config\usb_desc.h)(0x5026666A)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_pwr.h)(0x4A0284C2)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\usb\config\memory.h)(0x502525EA)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+I (..\source\usb\config\usb_prop.h)(0x4A0284C2)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\config\usb_pwr.c)(0x4F6D32D6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_pwr.o --omf_browse .\objects\usb_pwr.crf --depend .\objects\usb_pwr.d)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+I (..\source\usb\config\usb_pwr.h)(0x4A0284C2)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+F (..\source\usb\config\usb_scsi.c)(0x50252500)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_scsi.o --omf_browse .\objects\usb_scsi.crf --depend .\objects\usb_scsi.d)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_scsi.h)(0x4F6D32D6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\config\memory.h)(0x502525EA)
+I (..\source\usb\config\platform_config.h)(0x4C21EBBA)
+F (..\source\usb\lib\usb_core.c)(0x4A0283F6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_core.o --omf_browse .\objects\usb_core.crf --depend .\objects\usb_core.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\lib\usb_init.c)(0x4C1C3456)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_init.o --omf_browse .\objects\usb_init.crf --depend .\objects\usb_init.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\lib\usb_int.c)(0x4A0283F6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_int.o --omf_browse .\objects\usb_int.crf --depend .\objects\usb_int.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\lib\usb_mem.c)(0x4A0283F6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_mem.o --omf_browse .\objects\usb_mem.crf --depend .\objects\usb_mem.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\usb\lib\usb_regs.c)(0x4A0283F6)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\usb_regs.o --omf_browse .\objects\usb_regs.crf --depend .\objects\usb_regs.d)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+F (..\source\main\main.c)(0x571B279A)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\source\system\delay.h)(0x50436849)
+I (..\source\driver\led.h)(0x56FA31C9)
+I (..\source\driver\timer.h)(0x505310A8)
+I (..\source\driver\flash.h)(0x504C212D)
+I (..\source\driver\sram.h)(0x5055B4BE)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
+I (..\source\driver\mmc_sd.h)(0x50573D53)
+I (..\source\usb\config\mass_mal.h)(0x4F5DBD24)
+I (..\source\usb\lib\usb_lib.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_type.h)(0x4A0282C6)
+I (..\source\usb\config\usb_conf.h)(0x4C22FD12)
+I (..\source\usb\lib\usb_regs.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_def.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_core.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_init.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_mem.h)(0x4A0282C6)
+I (..\source\usb\lib\usb_int.h)(0x4A0282C6)
+I (..\source\usb\config\hw_config.h)(0x4C23011C)
+I (..\source\usb\config\usb_pwr.h)(0x4A0284C2)
+I (..\source\usb\config\memory.h)(0x502525EA)
+I (..\source\usb\config\usb_bot.h)(0x5025257C)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\fatfs\exfuns.h)(0x5058429D)
+I (..\source\driver\exti.h)(0x57030CD3)
+I (..\source\driver\power_control.h)(0x56FA2A56)
+I (..\source\app\lower.h)(0x56FB4718)
+F (..\source\fatfs\diskio.c)(0x56F3F406)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\diskio.o --omf_browse .\objects\diskio.crf --depend .\objects\diskio.d)
+I (..\source\driver\mmc_sd.h)(0x50573D53)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\fatfs\diskio.h)(0x503B7896)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\driver\flash.h)(0x504C212D)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+F (..\source\fatfs\exfuns.c)(0x50598481)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\exfuns.o --omf_browse .\objects\exfuns.crf --depend .\objects\exfuns.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
+I (..\source\fatfs\exfuns.h)(0x5058429D)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\fatfs\fattester.h)(0x505842CC)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+F (..\source\fatfs\ff.c)(0x50595100)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\ff.o --omf_browse .\objects\ff.crf --depend .\objects\ff.d)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\fatfs\diskio.h)(0x503B7896)
+I (C:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x55DB2B7E)
+F (..\source\fatfs\mycc936.c)(0x56EF8D15)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\mycc936.o --omf_browse .\objects\mycc936.crf --depend .\objects\mycc936.d)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\text\fontupd.h)(0x505932A6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\driver\flash.h)(0x504C212D)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+F (..\source\text\fontupd.c)(0x56EF8D02)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\fontupd.o --omf_browse .\objects\fontupd.crf --depend .\objects\fontupd.d)
+I (..\source\text\fontupd.h)(0x505932A6)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\driver\flash.h)(0x504C212D)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+F (..\source\app\lower.c)(0x571B2FF5)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I..\source\driver -I..\source\malloc -I..\source\system -I..\source\usb\config -I..\source\usb\lib -I..\source\include -I..\source\fatfs -I..\source\text -I..\source\app-I C:\Keil_v5\ARM\RV31\INC-I C:\Keil_v5\ARM\CMSIS\Include-I C:\Keil_v5\ARM\Inc\ST\STM32F10x-D__UVISION_VERSION="517"-o .\objects\lower.o --omf_browse .\objects\lower.crf --depend .\objects\lower.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x55DB2B78)
+I (..\source\system\usart.h)(0x56EFBD65)
+I (..\source\include\stm32f10x_map.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_conf.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_type.h)(0x4A0282C6)
+I (..\source\include\cortexm3_macro.h)(0x4A0282C6)
+I (..\source\include\stm32f10x_nvic.h)(0x4A0282C6)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x55DB2B76)
+I (..\source\fatfs\ff.h)(0x50595100)
+I (..\source\fatfs\integer.h)(0x4BD31212)
+I (..\source\fatfs\ffconf.h)(0x56EF8B86)
+I (..\source\malloc\malloc.h)(0x5056D9EA)
+I (..\source\driver\led.h)(0x56FA31C9)
+I (..\source\system\sys.h)(0x56FB4528)
+I (..\source\app\lower.h)(0x56FB4718)
