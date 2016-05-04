@@ -184,6 +184,9 @@ void lower_uart_tx_disconnect(void)
     lower_uart_tx(CODE_DISCONN, 0, 0, NULL);
 }
 
+/*
+ * 循环接收串口数据，判断是否收到了一个完整的boot_conn_req
+ */
 u8 boot_req_receive_buffer[sizeof(boot_conn_req)];
 void lower_uart_rx_idle(u8 data)
 {
@@ -200,22 +203,11 @@ void lower_uart_rx_idle(u8 data)
             current_received_count--;
         }
     }
-#if 0
-    if(data == boot_conn_req[current_received_count]) {
-        current_received_count++;
-        if((current_received_count == sizeof(boot_conn_req))
-            &&(f_hid_bin != NULL)) {
-            lower_state = LOWER_DOING_HAND_SHAKE;
-            current_received_count = 0;
-            uart_tx((u8 *)boot_conn_ack, sizeof(boot_conn_ack));
-        }
-    }
-    else {
-        current_received_count = 0;
-    }
-#endif
 }
 
+/*
+ * 发送完boot_conn_ack后，等待接收boot_conn_success信号
+ */
 void lower_uart_rx_hand_shake(u8 data)
 {
     if(data == boot_conn_success[current_received_count]) {
@@ -236,18 +228,23 @@ void lower_uart_rx_hand_shake(u8 data)
     }
 }
 
+/*
+ * 烧写器对芯片发出各种指令后，通过该函数读取芯片的响应
+ */
 void lower_uart_rx_ack(u8 data, u8 expect_code)
 {
     static struct boot_pkt_t header;
-    
+
     if(current_received_count < sizeof(struct boot_pkt_t)) {
         *((u8 *)(&header)+current_received_count) = data;
         current_received_count++;
     }
 
+    //等待接收到足够的数据
     if(current_received_count == sizeof(struct boot_pkt_t)) {
+        current_received_count = 0;
         if(header.code == expect_code) {
-            current_received_count = 0;
+            //收到期望的结果，对读操作做一个特殊处理
             if(expect_code == CODE_READ_ACK) {
                 read_wait_for_header = FALSE;
             }
@@ -256,6 +253,7 @@ void lower_uart_rx_ack(u8 data, u8 expect_code)
             }
         }
         else {
+            //收到了非法的数据，断开连接或者复位
             if(lower_state != LOWER_DISCONNECTING) {
                 lower_uart_tx_disconnect();
             }
@@ -266,6 +264,9 @@ void lower_uart_rx_ack(u8 data, u8 expect_code)
     }
 }
 
+/*
+ * 接收要读取的数据的内容，相对应的是lower_uart_rx_ack中接收读操作时芯片返回的header
+ */
 void lower_uart_rx_content(u8 data)
 {
     if(lower_rx_buffer) {
@@ -279,6 +280,9 @@ void lower_uart_rx_content(u8 data)
     }
 }
 
+/*
+ * 将状态机恢复到初始状态
+ */
 void lower_uart_reset(void)
 {
     lower_state = LOWER_DISABLE;
@@ -289,6 +293,9 @@ void lower_uart_reset(void)
     LED2 = LED_OFF;
 }
 
+/*
+ * 收到了3180对读操作的响应，之后进入正常操作模式
+ */
 void low_fix_trans_bug_read_byte_ack()
 {
     current_received_count = 0;
@@ -296,6 +303,9 @@ void low_fix_trans_bug_read_byte_ack()
     lower_uart_tx_bin();    
 }
 
+/*
+ * 发起读取一个byte的操作，用于唤醒3180的引脚切换功能
+ */
 void low_fix_trans_bug_read_byte(void)
 {
     lower_state = LOWER_READ;
@@ -304,6 +314,13 @@ void low_fix_trans_bug_read_byte(void)
     lower_uart_tx(CODE_READ, 0, 1, 0);
 }
 
+/*
+ * 用于修正3180外接flash时的bug:3180的串口发送信号线复用到了spi的数据线上，
+ * 但是代码中有bug导致没有切换过来，所以这里假装接收到了芯片发来的请求连接
+ * 信号(boot_conn_req)，直接回复了boot_conn_ack数据，并且后面应该收到的响
+ * 应信号boot_conn_success也假装收到。之后通过发起一个读操作，唤醒芯片的引
+ * 脚功能切换动作。后面收到读操作的结果之后进行正常的写入操作。
+ */
 void low_fix_trans_bug(void)
 {
 #if ENABLE_AUDIO_DEVICE == 1
@@ -317,6 +334,9 @@ void low_fix_trans_bug(void)
 #endif
 }
 
+/*
+ * 处理串口接收数据的总入口
+ */
 void lower_uart_rx(u8 data)
 {
     switch(lower_state) {
