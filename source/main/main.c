@@ -156,24 +156,16 @@ int main(void)
     while(1) {
         if(key1_pressed) {
             key1_pressed = 0;
-            if(lower_get_state() == LOWER_DISABLE) {
-#if 0
-                power_control_pin_off();
-                LED1 = LED_OFF;
-                LED2 = LED_OFF;
-                delay_ms(1000);
-                delay_ms(1000);
-                lower_set_state(LOWER_IDLE);
-                power_control_pin_on();
-#else
-                LED1 = LED_OFF;
-                LED2 = LED_OFF;
-                lower_set_state(LOWER_IDLE);
-                power_control_pin_off();
-                delay_ms(10);
-                power_control_pin_on();
-#endif
+            if(lower_get_state() != LOWER_DISABLE) {
+                lower_uart_reset();
             }
+            LED1 = LED_OFF;
+            LED2 = LED_OFF;
+            lower_set_state(LOWER_IDLE);
+            power_control_pin_off();
+            delay_ms(10);
+            power_control_pin_on();
+            low_fix_trans_bug();
         }
 
         if(key2_pressed) {
@@ -191,8 +183,8 @@ int main(void)
         }
         
         if(key3_pressed) {
-            key3_pressed = 0;
             if(lower_get_state() == LOWER_DISABLE) {
+                key3_pressed = 0;
                 if(f_bin) {
                     f_close(f_bin);
                 }
