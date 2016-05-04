@@ -1,9 +1,0 @@
-.\objects\usb_istr.o: ..\source\usb\config\usb_istr.c
-.\objects\usb_istr.o: ..\source\usb\lib\usb_type.h
-.\objects\usb_istr.o: ..\source\usb\config\usb_conf.h
-.\objects\usb_istr.o: ..\source\usb\lib\usb_regs.h
-.\objects\usb_istr.o: ..\source\usb\config\usb_pwr.h
-.\objects\usb_istr.o: ..\source\usb\lib\usb_core.h
-.\objects\usb_istr.o: ..\source\usb\config\usb_istr.h
-.\objects\usb_istr.o: ..\source\usb\lib\usb_init.h
-.\objects\usb_istr.o: ..\source\usb\lib\usb_int.h

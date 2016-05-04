@@ -21,7 +21,7 @@
 #include "lower.h"
 
 u8 bd_addr[6];
-FIL *f_hid_bin;
+FIL *f_bin;
 
 //ALIENTEK战舰STM32开发板实验50
 //USB读卡器 实验  
@@ -124,19 +124,30 @@ int main(void)
     }
 
 #if 1
-    f_hid_bin = (FIL *)mymalloc(SRAMIN,sizeof(FIL));
-    if(f_open(f_hid_bin, (const TCHAR*)"1:/bd_addr.bin", FA_READ) == FR_OK) {
-        f_read(f_hid_bin, bd_addr, 6, &file_num);
-        f_close(f_hid_bin);
+    f_bin = (FIL *)mymalloc(SRAMIN,sizeof(FIL));
+    if(f_open(f_bin, (const TCHAR*)"1:/bd_addr.bin", FA_READ) == FR_OK) {
+        f_read(f_bin, bd_addr, 6, &file_num);
+        f_close(f_bin);
     }
 
-    if(f_open(f_hid_bin, (const TCHAR*)"1:/hid.bin", FA_READ) == FR_OK) {
-        
+    if(f_open(f_bin, (const TCHAR*)"1:/hid.bin", FA_READ) == FR_OK) {
+        device_type = HID_D_F_DEVICE;
     }
     else {
-        myfree(SRAMIN, (void *)f_hid_bin);
-        f_hid_bin = NULL;
+        if(f_open(f_bin, (const TCHAR*)"1:/flash.bin", FA_READ) == FR_OK) {
+            device_type = AUDIO_DEVICE_FLASH;
+        }
+        else {
+            if(f_open(f_bin, (const TCHAR*)"1:/eeprom.bin", FA_READ) == FR_OK) {
+                device_type = AUDIO_DEVICE_EEPROM;
+            }
+            else {
+                myfree(SRAMIN, (void *)f_bin);
+                f_bin = NULL;
+            }
+        }
     }
+    lower_assign_opcode();
 #endif
 
     LED1 = LED_ON;
@@ -182,8 +193,8 @@ int main(void)
         if(key3_pressed) {
             key3_pressed = 0;
             if(lower_get_state() == LOWER_DISABLE) {
-                if(f_hid_bin) {
-                    f_close(f_hid_bin);
+                if(f_bin) {
+                    f_close(f_bin);
                 }
                 f_bdaddr_bin = (FIL *)mymalloc(SRAMIN,sizeof(FIL));
                 if(f_open(f_bdaddr_bin, (const TCHAR*)"1:/bd_addr.bin", FA_WRITE) == FR_OK) {
@@ -191,8 +202,19 @@ int main(void)
                     f_close(f_bdaddr_bin);
                 }
                 myfree(SRAMIN, f_bdaddr_bin);
-                if(f_hid_bin) {
-                    f_open(f_hid_bin, (const TCHAR*)"1:/hid.bin", FA_READ);
+                if(f_bin) {
+                    switch(device_type) {
+                        case AUDIO_DEVICE_EEPROM:
+                            f_open(f_bin, (const TCHAR*)"1:/eeprom.bin", FA_READ);
+                            break;
+                        case AUDIO_DEVICE_FLASH:
+                            f_open(f_bin, (const TCHAR*)"1:/flash.bin", FA_READ);
+                            break;
+                        case HID_D_F_DEVICE:
+                        case HID_E_G_DEVICE:
+                            f_open(f_bin, (const TCHAR*)"1:/hid.bin", FA_READ);
+                            break;
+                    }
                 }
             }
         }

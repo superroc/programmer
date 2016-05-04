@@ -12,12 +12,14 @@ enum lower_state_t {
 };
 
 enum device_type_t {
-    AUDIO_DEVICE,
+    AUDIO_DEVICE_FLASH,
+    AUDIO_DEVICE_EEPROM,
     HID_D_F_DEVICE,
     HID_E_G_DEVICE,
     MAX_DEVICE_TYPE
 };
 
+extern enum device_type_t device_type;
 enum lower_state_t lower_get_state(void);
 void lower_uart_tx_disconnect(void);
 void lower_uart_tx_bin(void);
